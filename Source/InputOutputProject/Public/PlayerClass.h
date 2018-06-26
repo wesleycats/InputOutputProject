@@ -42,12 +42,20 @@ public:
 
 	void Move();
 
-	float jumpHeight;
-	float minJumpHeight;
-	float maxJumpHeight;
-	float walkJumpHeight;
-	float rightSpeed;
-	float leftSpeed;
-	float minHorizontalSpeed;
-	float maxHorizontalSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerJumpHeight)
+	float JumpHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMinJumpHeight)
+	float MinJumpHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMaxJumpHeight)
+	float MaxJumpHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerWalkJumpHeight)
+	float WalkJumpHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerRightSpeed)
+	float RightSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerLeftSpeed)
+	float LeftSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMinHorizontalSpeed)
+	float MinHorizontalSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerMaxHorizontalSpeed)
+	float MaxHorizontalSpeed;
 };
