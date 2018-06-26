@@ -29,9 +29,9 @@ void APlayerClass::BeginPlay()
 void APlayerClass::Tick(float deltaTime)
 {
 	Super::Tick(deltaTime);
-	//UE_LOG(LogTemp, Warning, TEXT("left speed: %f"), leftSpeed);
-	//UE_LOG(LogTemp, Warning, TEXT("right speed: %f"), rightSpeed);
-	//UE_LOG(LogTemp, Warning, TEXT("jump height: %f"), jumpHeight);
+	UE_LOG(LogTemp, Warning, TEXT("left speed: %f"), LeftSpeed);
+	UE_LOG(LogTemp, Warning, TEXT("right speed: %f"), RightSpeed);
+	UE_LOG(LogTemp, Warning, TEXT("jump height: %f"), JumpHeight);
 
 	GetCharacterMovement()->JumpZVelocity = JumpHeight;
 
