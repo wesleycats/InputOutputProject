@@ -2,5 +2,21 @@
 	"FileVersion": 3,
 	"EngineAssociation": "4.19",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "InputOutputProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Paper2D"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "UE4Duino",
+			"Enabled": true
+		}
+	]
 }
