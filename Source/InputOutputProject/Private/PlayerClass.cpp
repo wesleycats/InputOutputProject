@@ -104,7 +104,7 @@ void APlayerClass::Move()
 	AddMovementInput(GetActorForwardVector(), -LeftSpeed);
 	Jump();
 
-	if ((RightSpeed > 0 || LeftSpeed > 0) && JumpHeight == 0)
+	if ((RightSpeed > 0 || LeftSpeed > 0) && JumpHeight < WalkJumpHeight)
 	{
 		GetCharacterMovement()->JumpZVelocity = WalkJumpHeight;
 		Jump();
