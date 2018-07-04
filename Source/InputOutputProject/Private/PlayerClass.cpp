@@ -34,7 +34,6 @@ void APlayerClass::Tick(float deltaTime)
 	UE_LOG(LogTemp, Warning, TEXT("jump height: %f"), JumpHeight);
 
 	GetCharacterMovement()->JumpZVelocity = JumpHeight;
-
 	Move();
 }
 
